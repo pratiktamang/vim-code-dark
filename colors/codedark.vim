@@ -139,9 +139,9 @@ let s:cdOrange = {'gui': '#CE9178', 'cterm': s:cterm0F, 'cterm256': '173'}
 let s:cdLightRed = {'gui': '#D16969', 'cterm': s:cterm08, 'cterm256': '167'}
 if g:codedark_conservative | let s:cdLightRed = s:cdOrange | endif
 
-" let s:cdYellowOrange = {'gui': '#D7BA7D', 'cterm': s:cterm0A, 'cterm256': '179'}
-let s:cdYellowOrange = {'gui': '#9CDCFE', 'cterm': s:cterm0A, 'cterm256': '179'}
-let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
+let s:cdYellowOrange = {'gui': '#D7BA7D', 'cterm': s:cterm0A, 'cterm256': '179'}
+let s:cdYellow = {'gui': '#9CDCFE', 'cterm': s:cterm0A, 'cterm256': '187'}
+" let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
