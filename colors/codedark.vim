@@ -75,7 +75,6 @@ if !exists("g:codedark_transparent")
 endif
 
 let s:cdNone = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
-"let s:cdFront = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
 let s:cdFront = {'gui': '#9CDCFE', 'cterm': s:cterm05, 'cterm256': '188'}
 let s:cdBack = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
 if g:codedark_transparent | let s:cdBack = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'} | endif
@@ -141,7 +140,6 @@ if g:codedark_conservative | let s:cdLightRed = s:cdOrange | endif
 
 let s:cdYellowOrange = {'gui': '#D7BA7D', 'cterm': s:cterm0A, 'cterm256': '179'}
 let s:cdYellow = {'gui': '#9CDCFE', 'cterm': s:cterm0A, 'cterm256': '187'}
-" let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
@@ -149,7 +147,7 @@ let s:cdSilver = {'gui': '#C0C0C0', 'cterm': s:cterm05, 'cterm256': '7'}
 
 " Vim editor colors
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
-call <sid>hi('Normal', s:cdFront, s:cdBack, 'none', {})
+call <sid>hi('Normal', s:cdLightBlue, s:cdBack, 'none', {})
 call <sid>hi('ColorColumn', {}, s:cdCursorDarkDark, 'none', {})
 call <sid>hi('Cursor', s:cdCursorDark, s:cdCursorLight, 'none', {})
 call <sid>hi('CursorLine', {}, s:cdCursorDarkDark, 'none', {})
@@ -394,9 +392,9 @@ call <sid>hi('cssStyle', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('cssImportant', s:cdBlue, {}, 'none', {})
 
 " JavaScript:
-call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsFuncBlock', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('jsVariableDef', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsFuncArgs', s:cdBlue, {}, 'none', {})
+call <sid>hi('jsFuncBlock', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
 call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
 call <sid>hi('jsOperatorKeyword', s:cdBlue, {}, 'none', {})
