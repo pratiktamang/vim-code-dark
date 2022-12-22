@@ -202,7 +202,7 @@ call <sid>hi('Number', s:cdLightGreen, {}, 'none', {})
 call <sid>hi('Boolean', s:cdBlue, {}, 'none', {})
 call <sid>hi('Float', s:cdLightGreen, {}, 'none', {})
 
-call <sid>hi('Identifier', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('Identifier', s:cdDarkBlue, {}, 'none', {})
 call <sid>hi('Function', s:cdYellow, {}, 'none', {})
 
 call <sid>hi('Statement', s:cdPink, {}, 'none', {})
@@ -278,7 +278,7 @@ call <sid>hiTS('@constructor', 'TSConstructor', s:cdBlueGreen, {}, 'none', {})
 " Keywords
 call <sid>hiTS('@conditional', 'TSConditional', s:cdPink, {}, 'none', {})
 call <sid>hiTS('@repeat', 'TSRepeat', s:cdPink, {}, 'none', {})
-call <sid>hiTS('@label', 'TSLabel', s:cdLightBlue, {}, 'none', {})
+call <sid>hiTS('@label', 'TSLabel', s:cdDarkBlue, {}, 'none', {})
 call <sid>hiTS('@keyword', 'TSKeyword', s:cdBlue, {}, 'none', {})
 call <sid>hiTS('@keyword.function', 'TSKeywordFunction', s:cdBlue, {}, 'none', {})
 call <sid>hiTS('@keyword.operator', 'TSKeywordOperator', s:cdBlue, {}, 'none', {})
